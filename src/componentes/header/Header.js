@@ -4,7 +4,7 @@ import Logo from './Logo.js';
 import Nav from './Nav.js';
 import Iconos from './Iconos.js';
 import Oferta from './Oferta.js';
-import Carousel from './Carousel.js';
+import Carousel from './carousel/Carousel.js';
 
 
 class Header extends React.Component {
