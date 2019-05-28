@@ -9,10 +9,10 @@ class Marcas extends React.Component {
            <section class="feactured-brands">
                 <div class="container">
                     <div class="row align-items-center text-center">
-                        { Object.keys(this.props.marcas).map(key =>(
-                            <Marca
-                                key={key}
-                                marca={this.props.marcas[key]}
+                        { Object.keys(this.props.marcas).map(marca => (
+                            <Marca                                
+                                marca={this.props.marcas[marca]}
+                                key={marca}
                             />
                         ) ) }
                     </div>

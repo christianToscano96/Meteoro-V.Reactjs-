@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 0,
+        "img" : "nike",
+        "nombre" : "nike"
+    },
+    {
+        "id" : 1,
+        "img" : "adidas",
+        "nombre" : "adidas"
+    },
+    {
+        "id" : 2,
+        "img" : "puma",
+        "nombre" : "puma"
+    },
+    {
+        "id" : 3,
+        "img" : "jordan",
+        "nombre" : "jordan"
+    },
+    {
+        "id" : 4,
+        "img" : "vans",
+        "nombre" : "vans"
+    },
+    {
+        "id" : 5,
+        "img" : "under-armour",
+        "nombre" : "under-armour"
+    }
+]
