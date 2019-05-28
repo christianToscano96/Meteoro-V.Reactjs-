@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Producto extends Component {
+const Producto = (props) => {
     
-    render() {
-        const {produc, titulo, descr} = this.props.producto 
+        const {imagen, titulo, descr, id} = props.producto 
         return ( 
             <div className="col-12 col-md-6  hero-img">
             <a href="#">
-              <img src={produc} alt="" />
+              <img src={`images/hero/${imagen}.jpg`} alt="" />
             </a>
             <div className="mt-2">
               <a href="#">
@@ -18,8 +17,7 @@ class Producto extends Component {
               </a>
             </div>
           </div>
-         );
-    }
+         );    
 }
  
 export default Producto;

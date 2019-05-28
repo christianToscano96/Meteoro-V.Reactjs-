@@ -4,16 +4,21 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Header  from './header/Header';
 import Marcas from './marcas/Marcas';
 import WomanProducts from './coleccion/WomanProducts';
+import Arrivals from './arrivals/Arrivals';
+import Services from './services/Services';
+import Footer from './footer/Footer';
 import Banner from './Banner';
 //datos JSON
 import infoMarcas from '../datos/marcas.json';
 import Woman from '../datos/WonanProduct.json';
+import arrivals from '../datos/arrivals.json';
 
 
 class Routas extends Component {
     state = { 
         marcas : [],
-        womenproducts : []
+        womanproducts : [],
+        arrivals : []
      }
 
     //marcas
@@ -26,9 +31,13 @@ class Routas extends Component {
 
         //productos mujer
         this.setState({
-            womenproducts : Woman
+            womanproducts : Woman
         })
 
+        //arrivals
+        this.setState({
+            arrivals : arrivals
+        })
     } 
 
 
@@ -36,22 +45,21 @@ class Routas extends Component {
         return ( 
             <BrowserRouter>
                 <div className="">
+                    <Header/>
+                   
+                    <Marcas marcas={this.state.marcas} />
+                         
+                    <WomanProducts womanproducts={this.state.womanproducts} />
+
+                    <Arrivals
+                        arrivals={this.state.arrivals}
+                    />
+                    <Services />
+                    <Banner/> 
+
+                    <Footer/>
                     <Switch>
-                        <WomanProducts
-                            womenproducts={this.state.womenproducts}
-                        />
-
-                        <Header/>
-
-                        <Route  exact path="/marcas" render={() => (
-                            <Marcas 
-                                marcas={this.state.marcas}
-                            />
-                        )} />
-                        
-                        <Banner/>
-                        
-                       
+  
                     </Switch>
                 </div>
             </BrowserRouter>

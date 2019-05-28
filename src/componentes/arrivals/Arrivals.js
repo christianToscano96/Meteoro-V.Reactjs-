@@ -14,10 +14,10 @@ class Arrivals extends React.Component {
                         <p className="text-secondary">Shop the newest releases</p>
                         </div>
                         <div className="row text-center">
-                            { Object.keys(this.props.arrivals).map(key =>(
+                            { Object.keys(this.props.arrivals).map(arrival =>(
                                 <Arrival
-                                    key={key}
-                                    arrival={this.props.arrivals[key]}
+                                    key={arrival}
+                                    arrival={this.props.arrivals[arrival]}
                                 />
                             ) ) }
                         </div>                          

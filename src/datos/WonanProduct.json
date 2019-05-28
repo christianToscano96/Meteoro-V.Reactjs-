@@ -3,24 +3,24 @@
         "id" : 0,
         "titulo" : "Women's Nike Air Max",
         "descr" : "Shop now ",
-        "imagen" : "./images/hero/hero1.jpg"
+        "imagen" : "hero1"
     },
     {
         "id" : 1,
         "titulo" : "Women's Nike Air Max",
         "descr" : "Shop now ",
-        "imagen" : "./images/hero/hero2.jpg"
+        "imagen" : "hero2"
     },
     {
         "id" : 2,
         "titulo" : "Women's Nike Air Max",
         "descr" : "Shop now ",
-        "imagen" : "./images/hero/hero3.jpg"
+        "imagen" : "hero3"
     },
     {
         "id" : 3,
         "titulo" : "Women's Nike Air Max",
         "descr" : "Shop now ",
-        "imagen" : "./images/hero/hero4.jpg"
+        "imagen" : "hero4"
     }
 ]

@@ -12,10 +12,10 @@ class WomenProducts extends Component {
                     </div>
 
                     <div className= "row" >
-                        { Object.keys(this.props.womenproducts).map(key => (
+                        { Object.keys(this.props.womanproducts).map(producto => (
                             <Producto
-                                key={key}
-                                producto={this.props.producto[key]}
+                                key={producto}
+                                producto={this.props.womanproducts[producto]}
                             /> 
                         ) ) }
                     </div>
